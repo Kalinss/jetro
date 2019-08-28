@@ -28,12 +28,14 @@
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=production webpack --mode development",
-    "teset": "cross-env NODE_ENV=production node ./webpackConfig/styleConfig.js"
+    "teset": "cross-env NODE_ENV=production node ./webpackConfig/styleConfig.js",
+    "start:dev":"cross-env NODE_ENV=production webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
