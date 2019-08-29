@@ -35,7 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=production webpack --mode development",
     "teset": "cross-env NODE_ENV=production node ./webpackConfig/styleConfig.js",
-    "start:dev":"cross-env NODE_ENV=production webpack-dev-server --mode development"
+    "start:dev":"cross-env NODE_ENV=production webpack-dev-server --mode development --content-base src --hot --inline"
   },
   "repository": {
     "type": "git",

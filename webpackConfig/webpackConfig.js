@@ -1,2 +1,1 @@
-require('../src/html/blocks/index.pug');
-require('../src/css/over.scss');
+require("../src/css/style.scss");

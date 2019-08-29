@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const imagesConfig = require('./webpackConfig/imagesConfig');
 const pugConfig = require('./webpackConfig/pugConfig');
 const styleConfig = require('./webpackConfig/styleConfig');
+const fontsConfig = require('./webpackConfig/fontsConfig');
 
 module.exports = {
     devtool: (process.env.NODE_ENV ==='development')?'source-map':false,
@@ -18,15 +19,23 @@ module.exports = {
         rules: [
             ...pugConfig,
             ...imagesConfig,
-            ...styleConfig.loader
+            ...styleConfig.loader,
+            ...fontsConfig
+
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'src/html/blocks/index.pug',
+            template: 'src/html/pages/index.pug',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'ui.html',
+            template: 'src/html/pages/UImap.pug',
+            minify: false
+        }),
+
         new MiniCssExtractPlugin(styleConfig.pluginConf)
 
     ]
