@@ -15,6 +15,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js'
     },
+    devServer: {
+        host: '192.168.56.1'
+    },
     module: {
         rules: [
             ...pugConfig,

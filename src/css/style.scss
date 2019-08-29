@@ -3,3 +3,13 @@
 @import "./common/variables";
 @import "./common/fonts";
 @import "./common/mixin";
+
+div{
+  font-family:"Bebas";
+  font-size:20px;
+  text-transform: uppercase;
+}
+@import "blocks/wrapper";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
