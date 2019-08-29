@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: block;
+
+    //display: flex;
+    //justify-content: flex-start;
+  }
+  &__item {
+    display: inline-block;
+    margin-right:28px;
+    &:last-child{
+      margin-right:0;
+    }
+
+  }
+  &__link {
+    text-decoration: none;
+    color: $nav-not-active;
+    font-size: 1rem;
+    font-family: $bebas;
+    &.active {
+      color: $nav-active;
+    }
+    &:hover{
+      color: $nav-active;
+      transition: 0.3s ease;
+    }
+  }
+
+
+}

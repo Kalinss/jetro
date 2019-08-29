@@ -1,0 +1,19 @@
+mixin header(mixClass)
+    header(class='header '+(mixClass||''))
+        div.header__logo.logo
+            a.logo__link()
+                h1.logo__text-heading
+                    span.logo__text--first-color JET
+                    span.logo__text--second-color RO
+        nav.header__nav.nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link.active(href="#") Home
+                li.nav__item
+                    a.nav__link(href="#") About&nbsp;&nbsp;Us
+                li.nav__item
+                    a.nav__link(href="#") Blog
+                li.nav__item
+                    a.nav__link(href="#") Portfolio
+                li.nav__item
+                    a.nav__link(href="#") Contact&nbsp;&nbsp;us

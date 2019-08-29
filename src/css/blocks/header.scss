@@ -1,0 +1,33 @@
+.header {
+  height: 78px;
+  display: block;
+
+  @include sFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  &__logo {
+    float: left;
+    line-height: 78px;
+    @include sFlex {
+      line-height: inherit;
+    }
+  }
+  &__nav {
+    margin-top: 2px;
+    float: right;
+    min-width: 41.725%;
+    line-height: 78px;
+    @include sFlex {
+      line-height: inherit;
+    }
+  }
+
+  @include desktop {
+    &__nav {
+      width: 405px;
+    }
+  }
+}
