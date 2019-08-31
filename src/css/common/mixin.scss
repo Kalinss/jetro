@@ -1,6 +1,6 @@
 $tablet-width: 768px;
 $desktop-width: 960px; // и меньше
-$mobile-width: 420px;
+$mobile-width: 480px;
 
 @mixin sFlex {
   @supports (display: flex) {

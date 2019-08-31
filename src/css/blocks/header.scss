@@ -1,12 +1,13 @@
 .header {
   height: 78px;
   display: block;
+  position: relative;
 
   @include sFlex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
   }
   &__logo {
     float: left;
@@ -24,10 +25,16 @@
       line-height: inherit;
     }
   }
+  &__burger {
+    position: absolute;
+    top: 54%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
 
-  @include desktop {
-    &__nav {
-      width: 405px;
+    @include mobile {
+      display: block;
     }
   }
+
 }

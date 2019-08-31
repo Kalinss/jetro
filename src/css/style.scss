@@ -9,7 +9,13 @@ div{
   font-size:20px;
   text-transform: uppercase;
 }
+
+@import "blocks/main";
+
 @import "blocks/wrapper";
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/header";
+@import "blocks/decor";

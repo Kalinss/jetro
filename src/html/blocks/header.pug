@@ -1,3 +1,5 @@
+include burger
+
 mixin header(mixClass)
     header(class='header '+(mixClass||''))
         div.header__logo.logo
@@ -17,3 +19,4 @@ mixin header(mixClass)
                     a.nav__link(href="#") Portfolio
                 li.nav__item
                     a.nav__link(href="#") Contact&nbsp;&nbsp;us
+        +burger('header__burger')
