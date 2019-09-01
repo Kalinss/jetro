@@ -1,10 +1,11 @@
 include ../blocks/header
 include ../layouts/head
 include ../blocks/decor
+include ../blocks/slider
 
 +head
 body.main
     div.wrapper
-        +decor('main__decor')
         +header
-
+        +slider('main__slider')
+    +decor('main__decor')

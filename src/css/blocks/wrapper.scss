@@ -1,6 +1,10 @@
 .wrapper{
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
+
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  position: relative;
+  z-index: 10;
 
 }
