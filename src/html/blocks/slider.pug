@@ -1,2 +1,24 @@
 mixin slider(mixClass)
-    section(class="slider "+(mixClass||""))
+    figure(class="slider "+(mixClass||""))
+        div.slider__preview
+            img.slider__main-img.js-main-slider-img(src=require('./../../shared/images/slide-1.png'))
+            figcaption.slider__text-wrapper
+                a.slider__link-wrapper(href="#")
+                    h3.slider__slider-head Slide  One
+                    p.slider__text Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.
+                        |Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.
+                div.slider__decor
+
+        ul.slider__list.js-slider-list
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-1.png'))
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-2.jpg'))
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-3.jpg'))
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-5.png'))
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-7.jpg'))
+            li.slider__item
+                img.slider__item-img(witdh='140px' height='120px' src=require('./../../shared/images/slide-8.jpg'))
