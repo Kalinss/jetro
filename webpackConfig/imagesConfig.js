@@ -21,9 +21,7 @@ const config = [ // сжимаем -> мелкие кодируем -> боль�
                     mimetype: mimetypes.jpg
                 },
             },
-            {
-                loader: 'image-webpack-loader',
-            }
+
         ]
     },
     {
@@ -36,9 +34,7 @@ const config = [ // сжимаем -> мелкие кодируем -> боль�
                     mimetype: mimetypes.png
                 },
             },
-            {
-                loader: 'image-webpack-loader',
-            }
+
         ]
     },
     {
@@ -51,9 +47,7 @@ const config = [ // сжимаем -> мелкие кодируем -> боль�
                     mimetype: mimetypes.gif
                 },
             },
-            {
-                loader: 'image-webpack-loader',
-            }
+
         ]
     },
 ];
