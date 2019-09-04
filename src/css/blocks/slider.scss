@@ -7,7 +7,10 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    margin-bottom:17px;
+    margin-bottom: 17px;
+    @include max-media('650px') {
+      margin-bottom: 0;
+    }
   }
   &__main-img {
     height: 401px;
@@ -27,6 +30,11 @@
     left: 36px;
     z-index: 11;
     color: $slider-text-color;
+    @include max-media('475px') {
+      width: 100%;
+      left: 0px;
+
+    }
   }
   &__slider-head {
     font-size: 1.125rem;
@@ -39,6 +47,7 @@
     color: $slider-text-color;
     opacity: 1;
     text-decoration: none;
+
   }
   &__text {
     margin-top: 22px;
@@ -58,23 +67,45 @@
     background-color: $preview-color;
     opacity: 0.6;
   }
-  &__list{
+  &__list {
     display: block;
   }
-  &__item{
+  &__item { // 800px // 650px
     display: inline-block;
-    width: 140px;
+    width: calc((100% - 100px) / 6); //140
     height: 120px;
     cursor: pointer;
     margin: 0 10px;
-    &:first-child{
+    &:first-child {
       margin-left: 0;
     }
-    &:last-child{
-      margin-right:0;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include max-media('800px') {
+      width: calc((100% - 100px) / 3);
+      margin: 0;
+      margin: 0 calc((100% - (100% - 100px)) / 4); //780- 50
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(4n) {
+        margin-left: 0;
+      }
+      &:nth-child(n+4) {
+        margin-top: 20px;
+      }
+    }
+    @include max-media('650px') {
+      width: 100%;
+      height: 50px;
+      margin: 0;
+      &:nth-child(1n) {
+        margin-top: 5px;
+      }
     }
   }
-  &__item-img{
+  &__item-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
