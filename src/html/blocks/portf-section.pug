@@ -1,0 +1,4 @@
+include ./portfolio-item
+mixin portf-section(mixClass)
+    section(class="portf-section "+(mixClass||''))
+        +portfolio-item('portf-section__portfolio-item')

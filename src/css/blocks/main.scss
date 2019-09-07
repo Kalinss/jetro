@@ -4,4 +4,15 @@
     left: 0;
     top: 78px;
   }
+  &__portf-section{
+    margin-top:42px;
+  }
+  &__works{
+    margin-top:28px;
+  }
+  @include max-media('400px'){
+    &__portf-section{
+      margin-top:20px;
+    }
+  }
 }
