@@ -2,10 +2,14 @@ include ../blocks/header
 include ../layouts/head
 include ../blocks/decor
 include ../blocks/gallery
-
+include ../blocks/portf-section
+include ../blocks/works
 +head
 body.main
     div.wrapper
         +header
         +gallery('main__slider')
+        +portf-section('main__portf-section')
+        +works('main__works')
     +decor('main__decor')
+
