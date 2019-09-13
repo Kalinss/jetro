@@ -1,4 +1,5 @@
 include ./portfolio-item
 mixin portf-section(mixClass)
+    h2.disable Portfolio
     section(class="portf-section "+(mixClass||''))
         +portfolio-item('portf-section__portfolio-item')

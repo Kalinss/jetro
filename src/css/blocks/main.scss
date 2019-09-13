@@ -1,14 +1,23 @@
 .main{
+  position: relative;
   &__decor{
     position: absolute;
     left: 0;
-    top: 78px;
+    &--top{
+      top: 78px;
+    }
+    &--bottom{
+      bottom: 0;
+    }
   }
   &__portf-section{
     margin-top:42px;
   }
   &__works{
     margin-top:28px;
+  }
+  &__footer{
+    margin-top:45px;
   }
   @include max-media('400px'){
     &__portf-section{
