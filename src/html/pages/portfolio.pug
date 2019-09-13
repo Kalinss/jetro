@@ -1,6 +1,10 @@
 include ../blocks/header
 include ../layouts/head
+include ../blocks/heading-item
+include ../blocks/decor
 +head
 body.portfolio
     div.wrapper
         +header
+        +heading-item('portfolio__heading-item','Portfolio')
+    +decor('page__decor page__decor--top decor--small')

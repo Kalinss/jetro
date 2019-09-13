@@ -1,15 +1,5 @@
 .main{
   position: relative;
-  &__decor{
-    position: absolute;
-    left: 0;
-    &--top{
-      top: 78px;
-    }
-    &--bottom{
-      bottom: 0;
-    }
-  }
   &__portf-section{
     margin-top:42px;
   }
