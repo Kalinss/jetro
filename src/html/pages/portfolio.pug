@@ -2,9 +2,11 @@ include ../blocks/header
 include ../layouts/head
 include ../blocks/heading-item
 include ../blocks/decor
+include ../blocks/portfolio-navigation
 +head
 body.portfolio
     div.wrapper
         +header
         +heading-item('portfolio__heading-item','Portfolio')
+        +portfolio-navigation('portfolio__portfolio-navigation')
     +decor('page__decor page__decor--top decor--small')

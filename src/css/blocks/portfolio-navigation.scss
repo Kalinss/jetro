@@ -1,0 +1,26 @@
+.portfolio-navigation{
+    width: 100%;
+    &__item{
+      color: $portfolio-navigation;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 24px;
+      display: inline-block;
+      transition: 0.4s ease;
+      &:hover{
+        background-color: $main-theme;
+        transition: 0.3s ease;
+        color: white;
+        cursor: pointer;
+      }
+
+    }
+  &__link{
+    text-decoration: none;
+    padding: 9px 13px;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
