@@ -4,6 +4,7 @@ include ../blocks/decor
 include ../blocks/gallery
 include ../blocks/portf-section
 include ../blocks/works
+include ../blocks/footer
 +head
 body.main
     div.wrapper
@@ -11,5 +12,7 @@ body.main
         +gallery('main__slider')
         +portf-section('main__portf-section')
         +works('main__works')
-    +decor('main__decor')
+        +footer('main__footer')
+    +decor('main__decor main__decor--top decor--small')
+    +decor('main__decor main__decor--bottom decor--big')
 

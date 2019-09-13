@@ -1,6 +1,14 @@
 .decor{
-  height:61px;
   width: 100%;
   background-color: $decor-color;
   z-index: 0;
+  &--small{
+    height: 61px;
+  }
+  &--big{
+    height: 265px;
+    @include max-media('450px'){
+      height:300px;
+    }
+  }
 }
