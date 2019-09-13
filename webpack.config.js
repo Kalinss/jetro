@@ -50,6 +50,11 @@ module.exports = {
             template: 'src/html/pages/portfolio.pug',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'individual.html',
+            template: 'src/html/pages/individual.pug',
+            minify: false
+        }),
         new webpack.ProvidePlugin({
             $: "jquery/dist/jquery.min.js",
             jQuery: "jquery/dist/jquery.min.js",
