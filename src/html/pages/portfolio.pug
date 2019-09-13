@@ -3,10 +3,15 @@ include ../layouts/head
 include ../blocks/heading-item
 include ../blocks/decor
 include ../blocks/portfolio-navigation
+include ../blocks/portfolio-works
+include ../blocks/footer
 +head
 body.portfolio
     div.wrapper
         +header
         +heading-item('portfolio__heading-item','Portfolio')
         +portfolio-navigation('portfolio__portfolio-navigation')
+        +portfolio-works('main__works')
+        +footer('page__footer')
     +decor('page__decor page__decor--top decor--small')
+    +decor('page__decor page__decor--bottom decor--big')
