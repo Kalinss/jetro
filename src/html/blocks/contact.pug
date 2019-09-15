@@ -1,3 +1,4 @@
+include ./sidebar
 mixin contact(mixClass)
     section(class='contact clearfix '+(mixClass||''))
         div.contact__left.content-wrapper__left.clearfix
@@ -32,3 +33,4 @@ mixin contact(mixClass)
                     textarea(placeholder="first   name").contact__input.contact__input--textarea
                     input(type="submit" value="submit").contact__submit
         div.contact__right.content-wrapper__right
+            +sidebar
