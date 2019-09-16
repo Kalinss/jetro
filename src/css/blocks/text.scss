@@ -1,0 +1,124 @@
+.text{ // 420
+  color: $text-default-color;
+  font-family: $helveticaNue;
+  & p{
+    color: inherit;
+    font-family:inherit;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top:25px;
+    &:first-child{
+      margin-top:0;
+    }
+    & img{
+      &.left{
+        margin-right:25px;
+      }
+      &.right{
+        margin-left:25px;
+      }
+    }
+    &.alert{
+      //display: table;
+      display: block;
+      vertical-align: middle;
+
+      margin-right:auto;
+      margin-left:auto;
+      width: 100%;
+      max-width: 675px;
+      min-height: 60px;
+      text-align: center;
+      font-size: 0.875rem;
+      font-style: italic;
+      padding: 10px;
+      &:before { /* для IE8+ */
+        content: "";
+        display: inline-block;
+        min-height: inherit;
+        height: 100%;
+        vertical-align: middle;
+      }
+      &--yellow{
+        background-color: #effeb9;
+        border: 1px solid #98c601;
+        color: #98c601;
+      }
+      &--red{
+        border: 1px solid #eb5439;
+        background-color: #fbcbc1;
+        color: #eb5439;
+      }
+    }
+    &.first{
+      &:first-letter{
+        float: left;
+        color: #e8603c;
+        font-size: 2.25rem;
+        font-weight: 900;
+        padding-top:5px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-right:5px;
+
+      }
+    }
+  }
+  & img{
+    width: 220px;
+    height: 220px;
+    &.left{
+      float: left;
+    }
+    &.right{
+      float: right;
+    }
+  }
+  & blockquote{
+    color: inherit;
+    position: relative;
+    font-family:inherit;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top:25px;
+    padding-left: 70px;
+    &:before{
+      display: block;
+      position: absolute;
+      left: 40px;
+      content: '';
+      width: 8px;
+      height:90%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #e8663c;
+    }
+  }
+  @include max-media('420px'){
+    & img{
+      float: none;
+      &.left{
+        float: none;
+        margin-left: auto;
+        margin-right:auto !important;
+        display: block;
+        margin-bottom:5px;
+      }
+      &.right{
+        margin-left: auto;
+        margin-right:auto !important;
+        display: block;
+        margin-bottom:5px;
+        float: none;
+      }
+    }
+    & blockquote{
+      padding-left: 25px;
+      &:before{
+        left: 5px;
+      }
+    }
+  }
+}
