@@ -1,10 +1,5 @@
-.contact{
-  &__left{
-    width: 71.8085%;
-  }
-  &__right{
-    width: 28.19114%;
-  }
+.contact{ // 960 //650
+
   &__map-box{
     width: 100%;
     height:400px;
@@ -15,11 +10,9 @@
     }
   }
   &__inf-box{
-
     float: left;
     font-family: $helveticaNue;
     width: 31.5556%;
-    height:200px;
     & p{
       max-width: 170px;
       color: #414141;
@@ -45,7 +38,6 @@
   }
   &__input-box{
     float:right;
-
     width:68.4444% ;
   }
   &__input{
@@ -94,6 +86,42 @@
       background-color: transparent;
       border: 1px solid #e8663c;
       transition: 0.3s ease
+    }
+  }
+  @include max-media('960px'){
+    &__left{
+      width: 100%;
+    }
+    &__input-box{
+      max-width: 480px;
+      float: left;
+    }
+  }
+  @include max-media('650px'){
+    &__map-box{
+      margin-bottom:10px;
+    }
+    &__inf-box{
+      width: 100%;
+      float: none;
+      & p{
+        margin-top:0;
+        margin-right:20px;
+        float: left;
+        display: block;
+      }
+    }
+    &__input-box{
+      margin-top:20px;
+    }
+  }
+  @include max-media('450px'){
+    &__input{
+      width: 100%;
+    }
+    &__input-box{
+      width: 100%;
+      margin-top:20px;
     }
   }
 }
