@@ -1,0 +1,28 @@
+include blog-description
+mixin blog-item(mixClass,type)
+    div(class='blog-item ' + (mixClass || ""))
+        div.blog-item__content
+            if(type == 'slider')
+                div.blog-item__decor.blog-item__decor--slider.blog-item__slider
+                    div.blog-item__img
+                        img(src=require('../../shared/images/slide-1.png'))
+                +blog-description('blog-item__blog-description')
+            if(type == 'video')
+                div.blog-item__decor.blog-item__decor--video.blog-item__video
+                    div.blog-item__video
+                        iframe(src='https://www.youtube.com/embed/JJKVZkyTdnM?rel=0', allowfullscreen='', width='100%', height='100%', frameborder='0')
+                +blog-description('blog-item__blog-description')
+            if(type == 'blockquote')
+                div.blog-item__decor.blog-item__decor--blockquote.blog-item__blockquote
+                    p
+                        | Write anything you want here in this quotable area. Something unique you want people to learn
+                        | about your website or some cool random fact. Its totally up to you.
+                        | Write anything you want here in this quotable area. Something unique you want people to learn
+                        | about your website or some cool random fact. Its totally up to you.
+                        | Write anything you want here in this quotable area. Something unique you want people to learn
+                        | about your website or some cool random fact. Its totally up to you.
+            if(type == 'text')
+                div.blog-item__decor.blog-item__decor--text.blog-item__text
+                    div.blog-item__img
+                        img(src=require('../../shared/images/slide-8.jpg'))
+                +blog-description('blog-item__blog-description')

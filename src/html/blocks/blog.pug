@@ -1,7 +1,11 @@
 include sidebar
+include blog-item
 mixin blog(mixClass)
-    section(class="blog "+(mixClass||""))
+    section(class="blog clearfix "+(mixClass||""))
         div.blog__left.content-wrapper__left.clearfix
-
+            +blog-item('blog__item','slider')
+            +blog-item('blog__item','text')
+            +blog-item('blog__item','video')
+            +blog-item('blog__item','blockquote')
         div.blog__right.content-wrapper__right.clearfix
             +sidebar
