@@ -93,4 +93,12 @@
       }
     }
   }
+  @include max-media('1110px'){
+
+    &__decor{
+      &:before{
+        display: none;
+      }
+    }
+  }
 }
