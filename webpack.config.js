@@ -65,6 +65,11 @@ module.exports = {
             template: 'src/html/pages/about.pug',
             minify: false
         }),
+        new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: 'src/html/pages/blog-page.pug',
+            minify: false
+        }),
         new webpack.ProvidePlugin({
             $: "jquery/dist/jquery.min.js",
             jQuery: "jquery/dist/jquery.min.js",

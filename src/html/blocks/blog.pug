@@ -1,0 +1,7 @@
+include sidebar
+mixin blog(mixClass)
+    section(class="blog "+(mixClass||""))
+        div.blog__left.content-wrapper__left.clearfix
+
+        div.blog__right.content-wrapper__right.clearfix
+            +sidebar

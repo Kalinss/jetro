@@ -1,0 +1,14 @@
+include ../blocks/header
+include ../layouts/head
+include ../blocks/decor
+include ../blocks/footer
+include ../blocks/heading-item
+include ../blocks/blog
+
++head
+body.blog-page
+    div.wrapper
+        +header
+        +heading-item('blog-page__heading-item','Blog')
+        +blog('blog-page__blog')
+    +decor('page__decor page__decor--top decor--small')
