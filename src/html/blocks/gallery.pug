@@ -1,6 +1,6 @@
 mixin gallery(mixClass)
     h2.disable Gallery
-    figure(class="gallery "+(mixClass||""))
+    figure(class="gallery js-gallery "+(mixClass||""))
         div.gallery__preview
             img.gallery__main-img.js-main-gallery-img(src=require('./../../shared/images/slide-1.png'))
             figcaption.gallery__text-wrapper
