@@ -1,17 +1,28 @@
+include arrow-decor
+include loaderItem
 include blog-description
 mixin blog-item(mixClass,type)
     div(class='blog-item ' + (mixClass || ""))
         div.blog-item__content
             if(type == 'slider')
                 div.blog-item__decor.blog-item__decor--slider.blog-item__slider
-                    div.blog-item__img
-                        img(src=require('../../shared/images/slide-1.png'))
+                    div.js-blog-slider
+                        div.blog-item__img
+                            img(src=require('../../shared/images/slide-1.png'))
+                        div.blog-item__img
+                            img(src=require('../../shared/images/slide-1.png'))
+                    div.blog-item__button.blog-item__button--next.js-next
+                        +arrow-decor
+                    div.blog-item__button.blog-item__button--prev.js-prev
+                        +arrow-decor
                 +blog-description('blog-item__blog-description')
+                +loaderItem('loaderItem__blog')
             if(type == 'video')
                 div.blog-item__decor.blog-item__decor--video.blog-item__video
                     div.blog-item__video
                         iframe(src='https://www.youtube.com/embed/JJKVZkyTdnM?rel=0', allowfullscreen='', width='100%', height='100%', frameborder='0')
                 +blog-description('blog-item__blog-description')
+                +loaderItem('loaderItem__blog')
             if(type == 'blockquote')
                 div.blog-item__decor.blog-item__decor--blockquote.blog-item__blockquote
                     p
@@ -26,3 +37,4 @@ mixin blog-item(mixClass,type)
                     div.blog-item__img
                         img(src=require('../../shared/images/slide-8.jpg'))
                 +blog-description('blog-item__blog-description')
+                +loaderItem('loaderItem__blog')
