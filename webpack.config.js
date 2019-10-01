@@ -17,7 +17,10 @@ module.exports = {
         filename: '[name].js'
     },
     devServer: {
-        host: '192.168.56.1'
+        host: '192.168.0.103',
+        compress: false,
+        port: 9000,
+        contentBase: path.resolve(__dirname, '../src')
     },
     module: {
         rules: [
