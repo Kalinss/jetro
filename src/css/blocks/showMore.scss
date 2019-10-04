@@ -1,0 +1,29 @@
+.showMore {
+  width: 150px;
+  height: 50px;
+  border: 2px solid $main-theme;
+  background-color: $main-theme;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s ease;
+  margin: 0 auto;
+  margin-top:20px;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    background-color: transparent;
+    transition: 0.5s ease;
+    .showMore__text{
+      color: $main-theme;
+    }
+  }
+}
