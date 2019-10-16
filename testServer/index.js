@@ -17,9 +17,8 @@ app.get("/", function(request, response){
     // отправляем ответ
     response.send("<h2>Привет Express!</h2>");
 });
-app.get('/blog',()=>{});
+app.get('/blog',(request,response)=>{ response.send("<h2>Привет Express!</h2>");});
 app.post('/blog',urlencodedParser,(req,res)=>{
-    console.log(blogJSON);
     res.end(JSON.stringify(blogJSON()));
 
 });
