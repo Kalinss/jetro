@@ -1,6 +1,6 @@
-import img from './testImgBase64'
+const img = require('./testImgBase64');
 
-export default function () {
+module.exports = function () {
     return {
         date: 1571206915000,
         tags: "test|test",
@@ -9,6 +9,5 @@ export default function () {
         text: "test string string",
         img: img(),
         type:'news'
-
     }
-}
+};

@@ -4,3 +4,7 @@ node_modules
 node_modules/*
 dist
 Jetro psd
+testServer/node_modules
+/testServer/node_modules
+package-lock.json
+/testServer/package-lock.json
