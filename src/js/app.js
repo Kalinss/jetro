@@ -17,9 +17,6 @@ const loaders = $('.js-loader');
 const showMore = $('.js-show-more');
 // Функции на инициализацию
 
-showMore.on('click', () => {
-    alert('hello')
-});
 
 // проверка существования основных переменных
 // если существует -> подключить инициализацию модуля
@@ -29,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 $(document).ready(() => {
     loaders.length > 0 ? clearLoaders(loaders) : null;
-    showMore.length > 0 ? showMore() : null;
+    showMore.length > 0 ? initShowMore(showMore) : null;
 });
 
 
