@@ -22,6 +22,9 @@ app.post('/blog',urlencodedParser,(req,res)=>{
     res.end(JSON.stringify(blogJSON()));
 
 });
+app.post('/check',urlencodedParser,(req,res)=>{
+    res.end(JSON.stringify({articles:5}));
+});
 
 
 app.listen(port,()=>{

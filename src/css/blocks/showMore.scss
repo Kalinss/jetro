@@ -15,28 +15,15 @@
   font-size:1rem;
   font-family:$bebas;
   color: white;
-  &__text {
-    text-transform: uppercase;
-    font-family:$bebas;
-    position: absolute;
-    font-size:1rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
   &:hover{
     background-color: transparent;
-    transition: 0.5s ease;
     color: $main-theme;
   }
   &.loader{
     background-color: #fff;
     border-color: #fff;
     cursor: default;
+    transition: 0s ease;
     &:before{
       position: absolute;
       left: 0;
@@ -49,6 +36,7 @@
       background-image: url('../shared/plugin/slick-1.8.1/slick/ajax-loader.gif');
       background-position: center;
       background-repeat:no-repeat;
+
     }
   }
 }

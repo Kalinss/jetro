@@ -6,15 +6,11 @@ export default function (obj) {
 		</div>
 		<div class="blog-description blog-item__blog-description">
 			<div class="blog-description__inf clearfix">
-				<div class="blog-description__box"><h5 class="blog-description__heading">{{name}}</h5><span
-						class="blog-description__info blog-description__date"> April 15, 2012</span></div>
-				<div class="blog-description__box"><h5 class="blog-description__heading">tags</h5><span
-						class="blog-description__info blog-description__tag">Website  |  Design</span></div>
-				<div class="blog-description__box"><h5 class="blog-description__heading">Comments</h5><span
-						class="blog-description__info blog-description__comments">4</span></div>
+				<div class="blog-description__box"><h5 class="blog-description__heading">date</h5><span class="blog-description__info blog-description__date"> April 15, 2012</span></div>
+				<div class="blog-description__box"><h5 class="blog-description__heading">tags</h5><span class="blog-description__info blog-description__tag">Website  |  Design</span></div>
+				<div class="blog-description__box"><h5 class="blog-description__heading">Comments</h5><span class="blog-description__info blog-description__comments">4</span></div>
 			</div>
-			<div class="blog-description__text-wrap"><h4
-					class="blog-description__heading blog-description__heading--big">Top WordPress Themes of 2012</h4>
+			<div class="blog-description__text-wrap"><h4 class="blog-description__heading blog-description__heading--big">NEWS NEWS</h4>
 				<div class="blog-description__text"><p>Lorem ipsum dolor sit amet, sit an molestie neglegentur
 					concludaturque.
 					Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu
@@ -28,16 +24,11 @@ export default function (obj) {
 		</div>
 		<div class="loaderItem js-loader loaderItem__blog" style="display: none;">
 			<div class="loaderItem__svg">
-				<svg class="lds-reload" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-				     viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+				<svg class="lds-reload" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 					<g>
-						<path d="M50 15A35 35 0 1 0 74.787 25.213" fill="none" ng-attr-stroke="{{config.color}}"
-						      ng-attr-stroke-width="{{config.width}}" stroke="#e8603c" stroke-width="12"></path>
-						<path ng-attr-d="{{config.darrow}}" ng-attr-fill="{{config.color}}" d="M49 3L49 27L61 15L49 3"
-						      fill="#e8603c"></path>
-						<animateTransform attributeName="transform" type="rotate" calcMode="linear"
-						                  values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s"
-						                  repeatCount="indefinite"></animateTransform>
+						<path d="M50 15A35 35 0 1 0 74.787 25.213" fill="none" ng-attr-stroke="" ng-attr-stroke-width="" stroke="#e8603c" stroke-width="12"></path>
+						<path ng-attr-d="" ng-attr-fill="" d="M49 3L49 27L61 15L49 3" fill="#e8603c"></path>
+						<animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform>
 					</g>
 				</svg>
 			</div>

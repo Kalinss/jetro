@@ -1,0 +1,14 @@
+export default function (obj) {
+    return `
+    <div class="blog-item blog__item">
+        <div class="blog-item__content">
+            <div class="blog-item__decor blog-item__decor--blockquote blog-item__blockquote"><p>Write anything you want here
+                in this quotable area. Something unique you want people to learn
+                about your website or some cool random fact. Its totally up to you.
+                Write anything you want here in this quotable area. Something unique you want people to learn
+                about your website or some cool random fact. Its totally up to you.
+                Write anything you want here in this quotable area. Something unique you want people to learn
+                about your website or some cool random fact. Its totally up to you.</p></div>
+        </div>
+    </div>`
+}
