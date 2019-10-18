@@ -5,6 +5,7 @@ import template from './templateHandling'
 import initSlider from './slider'
 import * as R from 'ramda'
 
+
 let button; // side effect
 
 // setting request
@@ -57,16 +58,18 @@ const checkRemainArticles = () => {
 };
 
 // function sideEffect button showmore
+
+//addLoader::item->sideEffect(item)
 const addLoader = (item) => addloaderForShowMore(item);
+//clear::item->sideEffect(item)
 const clearLoader = (item) => clearLoaderForShowMore(item);
 
 
 const eventClick = (event) => {
     const there = event.target;
     button = there; // side effect
-    addLoader(there);
+    addLoader(button);
     requestSend();
-
     // запрос -> loader -> ответ -> шаблонизация -> clearLoader -> вставка результата
     //                           -> clearLoader -> вставка ошибки
 };

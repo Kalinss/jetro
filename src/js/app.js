@@ -7,6 +7,7 @@ import slick from 'slick-carousel'
 import initSlider from './slider'
 import {clearLoaders} from './loader'
 import initShowMore from './showMore'
+import initSidebar from './sidebar'
 
 
 // Основные переменные событий
@@ -15,6 +16,7 @@ const blogSlider = $('.js-blog-slider');
 const blogArticle = $('.blog__item');
 const loaders = $('.js-loader');
 const showMore = $('.js-show-more');
+const sidebar = $('.js-sidebar');
 // Функции на инициализацию
 
 
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(() => {
     loaders.length > 0 ? clearLoaders(loaders) : null;
     showMore.length > 0 ? initShowMore(showMore) : null;
+    sidebar.length > 0 ? initSidebar(sidebar) : null;
 });
 
 

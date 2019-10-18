@@ -23,7 +23,7 @@ app.post('/blog',urlencodedParser,(req,res)=>{
 
 });
 app.post('/check',urlencodedParser,(req,res)=>{
-    res.end(JSON.stringify({articles:5}));
+    res.end(JSON.stringify({articles:0}));
 });
 
 
