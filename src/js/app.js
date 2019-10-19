@@ -8,15 +8,16 @@ import initSlider from './slider'
 import {clearLoaders} from './loader'
 import initShowMore from './showMore'
 import initSidebar from './sidebar'
+import initMenu from './menu'
 
 
 // Основные переменные событий
 const gallery = $('.js-gallery');
 const blogSlider = $('.js-blog-slider');
-const blogArticle = $('.blog__item');
 const loaders = $('.js-loader');
 const showMore = $('.js-show-more');
 const sidebar = $('.js-sidebar');
+const menu = $('.js-burger');
 // Функции на инициализацию
 
 
@@ -30,6 +31,8 @@ $(document).ready(() => {
     loaders.length > 0 ? clearLoaders(loaders) : null;
     showMore.length > 0 ? initShowMore(showMore) : null;
     sidebar.length > 0 ? initSidebar(sidebar) : null;
+    menu.length > 0 ? initMenu(menu):null;
+
 });
 
 

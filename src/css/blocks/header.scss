@@ -11,6 +11,8 @@
   }
   &__logo {
     float: left;
+    position: relative;
+    z-index: 16;
     line-height: 78px;
     @include sFlex {
       line-height: inherit;
@@ -31,10 +33,13 @@
     right: 10px;
     transform: translateY(-50%);
     display: none;
-
+    z-index: 16;
     @include mobile {
       display: block;
     }
+  }
+  @include mobile() {
+    width: 100%;
   }
 
 }
