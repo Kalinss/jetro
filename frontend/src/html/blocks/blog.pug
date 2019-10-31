@@ -1,0 +1,16 @@
+include sidebar
+include blog-item
+include loaderItem
+include showMore
+mixin blog(mixClass)
+    section(class="blog clearfix "+(mixClass||""))
+        div.blog__left.content-wrapper__left.clearfix.js-content-blog
+            +blog-item('blog__item','slider')
+            +blog-item('blog__item','slider')
+            +blog-item('blog__item','text')
+            +blog-item('blog__item','video')
+            +blog-item('blog__item','blockquote')
+            +showMore('blog')
+        div.blog__right.content-wrapper__right.clearfix
+            +sidebar
+

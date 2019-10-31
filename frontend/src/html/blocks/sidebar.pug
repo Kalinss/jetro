@@ -1,0 +1,50 @@
+include heading-line
+mixin sidebar(mixClass)
+    section(class='sidebar js-sidebar '+(mixClass||""))
+        div.sidebar__about.sidebar__section
+            +heading-line('sidebar__heading-line','about jetro')
+            p   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                | Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi.
+                | Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.
+        div.sidebar__categories.sidebar__section
+            +heading-line('sidebar__heading-line','Categories')
+            ul.sidebar__categories-list
+                li
+                    a(href='#') Video (3)
+                li
+                    a(href='#') Sports (5)
+                li
+                    a(href='#') Media (2)
+                li
+                    a(href='#') Entertainment (7)
+                li
+                    a(href='#') Life (4)
+                li
+                    a(href='#') Super Cool Stuff (8)
+        div.sidebar__gallery.sidebar__section
+            +heading-line('sidebar__heading-line','Photo  Gallery')
+            ul.sidebar__gallery-list
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/work1.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/work3.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/work4.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/work2.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/slide-8.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/slide-2.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/slide-7.jpg'))
+                li.sidebar__gallery-item
+                    a(href='#')
+                        img(src=require('../../shared/images/slide-1.png'))

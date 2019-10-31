@@ -1,0 +1,16 @@
+.logo{
+  &__link{
+    text-decoration: none;
+  }
+  &__text-heading{
+    font-size:$h1size;
+  }
+  &__text{
+    &--first-color{
+      color: $logo-first-color;
+    }
+    &--second-color{
+      color: $logo-second-color;
+    }
+  }
+}

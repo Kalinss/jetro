@@ -1,0 +1,15 @@
+.page{
+  &__decor{
+    position: absolute;
+    left: 0;
+    &--top{
+      top: 78px;
+    }
+    &--bottom{
+      bottom: 0;
+    }
+  }
+  &__footer{
+    margin-top:45px;
+  }
+}
