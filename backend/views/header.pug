@@ -1,0 +1,51 @@
+mixin headerPage (mixClass)
+    header.header
+        .header__logo.logo
+            a.logo__link
+                h1.logo__text-heading
+                    span.logo__text--first-color JET
+                    span.logo__text--second-color RO
+        h2.disable Navigation
+        nav.header__nav.nav
+            ul.nav__list
+                if (name === 'home')
+                    li.nav__item
+                        a.nav__link.active(href='/' ) Home
+                else
+                    li.nav__item
+                        a.nav__link(href='/' ) Home
+
+
+                if (name === 'about')
+                    li.nav__item
+                        a.nav__link.active(href='/about') About  Us
+                else
+                    li.nav__item
+                        a.nav__link(href='/about') About  Us
+
+                if (name === 'blog')
+                    li.nav__item
+                        a.nav__link.active(href='/blog') Blog
+                else
+                    li.nav__item
+                        a.nav__link(href='/blog') Blog
+
+                if (name === 'portfolio')
+                    li.nav__item
+                        a.nav__link.active(href='/portfolio') Portfolio
+                else
+                    li.nav__item
+                        a.nav__link(href='/portfolio') Portfolio
+
+                if (name === 'contact')
+                    li.nav__item
+                        a.nav__link.active(href='/contact') Contact  Us
+                else
+                    li.nav__item
+                        a.nav__link(href='/contact') Contact  Us
+
+
+        .burger.js-burger.header__burger
+            .burger__line.burger__line--top
+            .burger__line.burger__line--middle
+            .burger__line.burger__line--bottom

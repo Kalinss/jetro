@@ -1,0 +1,89 @@
+include ./head
+include ./header
+include ./footer
+
+head
+    body.main
+        .wrapper
+            +headerPage(name)
+            h2.disable Gallery
+            figure.gallery.js-gallery.main__slider
+                .gallery__preview
+                    img.gallery__main-img.js-main-gallery-img(src='images/136e6eff8a755734d06ea8e1a507aab4.png')
+                    figcaption.gallery__text-wrapper
+                        a.gallery__link-wrapper(href='#')
+                            h3.gallery__gallery-head Slide One
+                            p.gallery__text
+                                | Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.Urbanitas
+                                | adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.
+                        .gallery__decor
+                ul.gallery__list.js-gallery-list
+                    each item in slides
+                        li.gallery__item
+                            img.gallery__item-img(witdh='140px', src='images/'+item.srcImage, height='120px')
+                            .gallery__item-decription
+                                h3.gallery__item-head= item.heading
+                                p.gallery__item-text= item.text
+                        hr.disable
+
+            h2.disable Portfolio
+            section.portf-section.main__portf-section
+                .portfolio-item.portf-section__portfolio-item
+                    .portfolio-item__head.portfolio-item__head--setting
+                        h3.portfolio-item__head-text
+                            | Check
+                            | out my latest portfolio items Check out my latest portfolio items
+                    .portfolio-item__text-box
+                        p.portfolio-item__text
+                            | Maecenas ipsum metus, semper hendrerit
+                            | varius mattis,congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum
+                            | enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+                            | Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                    .portfolio-item__button
+                        a.portfolio-item__link(href='#')
+                            span.portfolio-item__link-text more
+                .portfolio-item.portf-section__portfolio-item
+                    .portfolio-item__head.portfolio-item__head--tick
+                        h3.portfolio-item__head-text
+                            | Check out
+                            | my latest portfolio items Check out my latest portfolio items
+                    .portfolio-item__text-box
+                        p.portfolio-item__text
+                            | Maecenas ipsum metus, semper hendrerit
+                            | varius mattis,congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum
+                            | enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+                            | Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                    .portfolio-item__button
+                        a.portfolio-item__link(href='#')
+                            span.portfolio-item__link-text more
+                .portfolio-item.portf-section__portfolio-item
+                    .portfolio-item__head.portfolio-item__head--contr
+                        h3.portfolio-item__head-text
+                            | Check
+                            | out my latest portfolio items Check out my latest portfolio items
+                    .portfolio-item__text-box
+                        p.portfolio-item__text
+                            | Maecenas ipsum metus, semper hendrerit
+                            | varius mattis,congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum
+                            | enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+                            | Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+                    .portfolio-item__button
+                        a.portfolio-item__link(href='#')
+                            span.portfolio-item__link-text more
+            section.works.main__works
+                .works__head
+                    h2.works__head-text Recent Works
+                ul.works__list
+                    each item in works
+                        li.works__item
+                            figure.works__item-wrapper
+                                img.works__img(src='images/'+item.srcImage)
+                                fogcaption.works__text-box
+                                    h4.works__item-head
+                                        a.works__item-link(href='#')= item.heading
+                                    span.works__date June 15, 2012
+
+            +footerPage
+        .decor.page__decor.page__decor--top.decor--small
+        .decor.page__decor.page__decor--bottom.decor--big
+        script(type='text/javascript', src='main.js')
