@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const imagesConfig = require('./webpackConfig/imagesConfig');
@@ -29,20 +31,15 @@ module.exports = {
             ...styleConfig.loader,
             ...fontsConfig,
             ...jsConfig
-
         ]
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: 'tester.html',
-        //     template: 'src/html/pages/tester.pug',
-        //     minify: false
-        // }),
         new HtmlWebpackPlugin({
-            filename: 'index.html',
             template: 'src/html/pages/index.pug',
+            filename: 'index.html',
             minify: false
         }),
+
         new HtmlWebpackPlugin({
             filename: 'ui.html',
             template: 'src/html/pages/UImap.pug',
@@ -79,7 +76,7 @@ module.exports = {
             "window.jQuery": "jquery/dist/jquery.min.js"
         }),
 
-        new MiniCssExtractPlugin(styleConfig.pluginConf),
+        new MiniCssExtractPlugin(styleConfig.pluginConf)
 
     ]
 };
